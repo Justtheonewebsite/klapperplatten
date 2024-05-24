@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Bildergalerie</title>
+    <style>
+        /* CSS für die Bildanordnung */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .image-button {
+            cursor: pointer;
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+        }
+        .image-button img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interaktive Bildergalerie</h1>
+
+    <div class="image-grid">
+        <!-- Hier die Bilder mit zugehörigen Audiodateien -->
+        <div class="image-button" onclick="playAudio('audio1.mp3')">
+            <img src="bild1.jpg" alt="Bild 1">
+        </div>
+        <div class="image-button" onclick="playAudio('audio2.mp3')">
+            <img src="bild2.jpg" alt="Bild 2">
+        </div>
+        <!-- Weitere Bilder/Audio-Buttons hier ergänzen -->
+    </div>
+
+    <!-- JavaScript für Audio-Wiedergabe -->
+    <script>
+        function playAudio(audioFile) {
+            var audio = new Audio(audioFile);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
