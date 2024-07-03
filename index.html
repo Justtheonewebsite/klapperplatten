@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KLAPPERPLATTENJukebox</title>
+    <title>Interaktive Bildergalerie</title>
     <style>
         /* CSS für die Bildanordnung */
         .image-grid {
@@ -24,12 +24,12 @@
     </style>
 </head>
 <body>
-    <h1>KLAPPERPLATTENJukebox</h1>
+    <h1>Interaktive Bildergalerie</h1>
 
     <div class="image-grid">
         <!-- Hier die Bilder mit zugehörigen Audiodateien -->
-        <div class="image-button" onclick="playAudio(KP4.wav)">
-            <img src=20240130_143428.jpg alt=20240130_143428.jpg>
+        <div class="image-button" onclick="playAudio('C:/Users/Jana Donner/Music/KP1.wav')">
+            <img src="C:/Users/Jana Donner/Pictures/20240130_143428.jpg" alt="Bild 1">
         </div>
         <div class="image-button" onclick="playAudio('audio2.mp3')">
             <img src="bild2.jpg" alt="Bild 2">
@@ -40,9 +40,15 @@
     <!-- JavaScript für Audio-Wiedergabe -->
     <script>
         function playAudio(audioFile) {
+            console.log('Attempting to play audio:', audioFile); // Debugging
             var audio = new Audio(audioFile);
-            audio.play();
+            audio.play().then(() => {
+                console.log('Audio is playing:', audioFile);
+            }).catch(error => {
+                console.error('Fehler beim Abspielen der Audiodatei:', error);
+            });
         }
     </script>
 </body>
 </html>
+
