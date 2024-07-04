@@ -30,9 +30,10 @@
         }
 
         .second-line {
-            font-family: sans-serif; /* Schriftart sans-serif für zweite Zeile */
-            display: block; /* Sicherstellen, dass jede Zeile auf einer neuen Linie beginnt */
-            text-align: center; /* Zentrierung */
+            display: inline-block; /* Als Block-Element behandeln, um Breite anzupassen */
+            width: 100%; /* Volle Breite einnehmen */
+            text-align: center; /* Text zentrieren */
+            white-space: nowrap; /* Verhindern, dass Text umgebrochen wird */
         }
 
         .header-link {
@@ -93,7 +94,7 @@
     </style>
 </head>
 <body>
-    <h1>KLAPPERPLATTEN//<span>JUKEBOX</span><span class="second-line">vonJanaDonner</span></h1>
+    <h1>Klapperplatten//<span>JUKEBOX</span><span class="second-line">von Jana Donner</span></h1>
     <a class="header-link" href="ueber-dieses-projekt.html">über dieses projekt</a>
 
     <div class="centered-text">
