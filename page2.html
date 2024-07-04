@@ -3,147 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interaktive Bildergalerie</title>
+    <title>Über dieses Projekt</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap');
-        
         body {
+            font-family: 'Inter', sans-serif;
             margin-left: 1cm;
             margin-right: 1cm;
-            font-family: 'Inter', sans-serif;
         }
 
-        h1 {
-            font-size: 3em; /* 3x größer als normal */
+        .centered-text {
             text-align: center;
-        }
-
-        h1 span {
-            font-family: 'Bebas Neue', cursive;
-        }
-
-        /* CSS für die Bildanordnung */
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4x4 Raster */
-            gap: 10px;
-        }
-
-        .image-button {
-            cursor: pointer;
-            border: 1px solid #ccc;
-            padding: 5px;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        .image-button img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-
-        /* Medienabfragen für mobile Geräte */
-        @media (max-width: 1200px) {
-            .image-grid {
-                grid-template-columns: repeat(3, 1fr); /* 3x3 Raster */
-            }
-        }
-
-        @media (max-width: 900px) {
-            .image-grid {
-                grid-template-columns: repeat(2, 1fr); /* 2x2 Raster */
-            }
-
-            h1 {
-                font-size: 2em; /* Schriftgröße reduzieren */
-            }
-        }
-
-        @media (max-width: 600px) {
-            .image-grid {
-                grid-template-columns: 1fr; /* 1x1 Raster */
-            }
-
-            h1 {
-                font-size: 1.5em; /* Schriftgröße weiter reduzieren */
-            }
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
     </style>
 </head>
 <body>
-    <h1>Klapperplatten//<span>JUKEBOX</span></h1>
+    <h1>Über dieses Projekt</h1>
 
-    <div class="image-grid">
-        <!-- Hier die Bilder mit zugehörigen Audiodateien -->
-        <div class="image-button" onclick="playAudio('audio/KP1.wav')">
-            <img src="images/bild1.jpg" alt="Bild 1">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP2.wav')">
-            <img src="images/bild2.jpg" alt="Bild 2">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP3.wav')">
-            <img src="images/bild3.jpg" alt="Bild 3">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP4.wav')">
-            <img src="images/bild4.jpg" alt="Bild 4">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP5.wav')">
-            <img src="images/bild5.jpg" alt="Bild 5">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP6.wav')">
-            <img src="images/bild6.jpg" alt="Bild 6">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP7.wav')">
-            <img src="images/bild7.jpg" alt="Bild 7">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP8.wav')">
-            <img src="images/bild8.png" alt="Bild 8">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP9.wav')">
-            <img src="images/bild9.jpg" alt="Bild 9">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP10.wav')">
-            <img src="images/bild10.jpg" alt="Bild 10">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP11.wav')">
-            <img src="images/bild11.jpg" alt="Bild 11">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP12.wav')">
-            <img src="images/bild12.jpg" alt="Bild 12">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP13.wav')">
-            <img src="images/bild13.jpg" alt="Bild 13">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP14.wav')">
-            <img src="images/bild14.jpg" alt="Bild 14">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP15.wav')">
-            <img src="images/bild15.jpg" alt="Bild 15">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP16.wav')">
-            <img src="images/bild16.jpg" alt="Bild 16">
-        </div>
+    <div class="centered-text">
+        <p>Die interaktive digitale Installation "Klapperplatten//JUKEBOX" nutzt die charakteristischen Bodenplatten der Ruhr-Universität Bochum (RUB) als Ausgangspunkt für eine künstlerische Reflektion über Raum, Klang und Erinnerung. Besucher*innen der Ausstellung können durch die digitale Jukebox die vielfältigen visuellen und akustischen Muster und Nuancen der Platten erleben, die sonst im Alltagsrauschen untergehen würden. Indem sie Bilder auswählen und die dazugehörigen Klänge abspielen, rekonstruieren sie die akustische Landschaft der RUB. Die Klänge werden zu einer auditiven Reise durch die Geschichte und den Alltag der RUB. Während die Platten selbst im Laufe der Zeit vielleicht abgenutzt oder verändert werden, bleiben ihre Klänge in der digitalen Jukebox bewahrt.</p>
     </div>
-
-    <!-- Link zur zweiten Seite -->
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="page2.html" style="text-decoration: none; font-size: 1.2em; color: #333;">Zur zweiten Seite</a>
-    </div>
-
-    <!-- JavaScript für Audio-Wiedergabe -->
-    <script>
-        function playAudio(audioFile) {
-            console.log('Attempting to play audio:', audioFile); // Debugging
-            var audio = new Audio(audioFile);
-            audio.play().then(() => {
-                console.log('Audio is playing:', audioFile);
-            }).catch(error => {
-                console.error('Fehler beim Abspielen der Audiodatei:', error);
-            });
-        }
-    </script>
 </body>
 </html>
 
