@@ -14,7 +14,7 @@
         }
 
         h1 {
-            font-size: 3em; /* 6x größer als normal */
+            font-size: 3em; /* 3x größer als normal */
             text-align: center;
         }
 
@@ -30,20 +30,18 @@
         }
 
         .image-button {
-            position: relative;
             cursor: pointer;
             border: 1px solid #ccc;
-            padding-top: 100%; /* 1:1 Seitenverhältnis */
-            overflow: hidden;
+            padding: 5px;
+            text-align: center;
+            width: 100%;
+            height: 100%;
         }
 
         .image-button img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Bild proportional anpassen */
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
 
         /* Medienabfragen für mobile Geräte */
@@ -80,53 +78,58 @@
     <div class="image-grid">
         <!-- Hier die Bilder mit zugehörigen Audiodateien -->
         <div class="image-button" onclick="playAudio('audio/KP1.wav')">
-            <img src="20240130_143428.jpg" alt="Bild 1">
+            <img src="images/bild1.jpg" alt="Bild 1">
         </div>
         <div class="image-button" onclick="playAudio('audio/KP2.wav')">
-            <img src="20240130_150039.jpg" alt="Bild 2">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP15.wav')">
-            <img src="20240130_143536.jpg" alt="Bild 3">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP4.wav')">
-            <img src="20240130_143554.jpg" alt="Bild 4">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP5.wav')">
-            <img src="20240130_143722.jpg" alt="Bild 5">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP6.wav')">
-            <img src="20240130_143823.jpg" alt="Bild 6">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP7.wav')">
-            <img src="20240130_144142.jpg" alt="Bild 7">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP8.wav')">
-            <img src="20240130_144423.jpg" alt="Bild 8">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP9.wav')">
-            <img src="20240130_150452.jpg" alt="Bild 9">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP10.wav')">
-            <img src="20240130_145707.png" alt="Bild 10">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP11.wav')">
-            <img src="20240130_145132.jpg" alt="Bild 11">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP12.wav')">
-            <img src="20240130_144934.jpg" alt="Bild 12">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP13.wav')">
-            <img src="20240130_150325.jpg" alt="Bild 13">
-        </div>
-        <div class="image-button" onclick="playAudio('audio/KP14.wav')">
-            <img src="20240130_143510.jpg" alt="Bild 14">
+            <img src="images/bild2.jpg" alt="Bild 2">
         </div>
         <div class="image-button" onclick="playAudio('audio/KP3.wav')">
-            <img src="20240130_145836.jpg" alt="Bild 15">
+            <img src="images/bild3.jpg" alt="Bild 3">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP4.wav')">
+            <img src="images/bild4.jpg" alt="Bild 4">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP5.wav')">
+            <img src="images/bild5.jpg" alt="Bild 5">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP6.wav')">
+            <img src="images/bild6.jpg" alt="Bild 6">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP7.wav')">
+            <img src="images/bild7.jpg" alt="Bild 7">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP8.wav')">
+            <img src="images/bild8.png" alt="Bild 8">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP9.wav')">
+            <img src="images/bild9.jpg" alt="Bild 9">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP10.wav')">
+            <img src="images/bild10.jpg" alt="Bild 10">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP11.wav')">
+            <img src="images/bild11.jpg" alt="Bild 11">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP12.wav')">
+            <img src="images/bild12.jpg" alt="Bild 12">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP13.wav')">
+            <img src="images/bild13.jpg" alt="Bild 13">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP14.wav')">
+            <img src="images/bild14.jpg" alt="Bild 14">
+        </div>
+        <div class="image-button" onclick="playAudio('audio/KP15.wav')">
+            <img src="images/bild15.jpg" alt="Bild 15">
         </div>
         <div class="image-button" onclick="playAudio('audio/KP16.wav')">
-            <img src="20240130_145954.jpg" alt="Bild 16">
+            <img src="images/bild16.jpg" alt="Bild 16">
         </div>
+    </div>
+
+    <!-- Link zur zweiten Seite -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="page2.html" style="text-decoration: none; font-size: 1.2em; color: #333;">Zur zweiten Seite</a>
     </div>
 
     <!-- JavaScript für Audio-Wiedergabe -->
@@ -143,5 +146,3 @@
     </script>
 </body>
 </html>
-
-
