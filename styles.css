@@ -1,0 +1,33 @@
+body {
+    margin-left: 2cm;
+    margin-right: 2cm;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 3em; /* 3x größer als normal */
+    text-align: center;
+    position: relative; /* Positionierung relativ für die zweite Zeile */
+}
+
+h1 span {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.second-line {
+    position: absolute; /* Positionierung relativ zum h1-Element */
+    top: 0;
+    left: calc(100% + 1.5ch); /* Um 1.5 Zeichen nach rechts versetzt */
+    font-family: 'Roboto', sans-serif; /* Andere serifenlose Schriftart */
+    font-size: 0.9em; /* Kleiner als h1 */
+}
+
+.header-link {
+    position: absolute; /* Positionierung oben rechts */
+    top: 10px;
+    right: 10px;
+    font-size: 1.2em;
+}
+
+/* Stil für die Seite "Über dieses Projekt" */
+/* Für eine bessere Struktur empfehle ich, in "ueber-dieses-projekt.html" zu speichern und "styles.css" zu verwenden, um die Anforderungen für die Seite zu erfüllen.
