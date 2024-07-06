@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interaktive Bildergalerie</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap');
         
         body {
             margin-left: 1cm;
@@ -14,12 +14,19 @@
         }
 
         h1 {
-            font-size: 3em; /* 6x größer als normal */
+            font-size: 5em; /* 6x größer als normal */
             text-align: center;
         }
 
         h1 span {
             font-family: 'Bebas Neue', cursive;
+        }
+
+        /* CSS für die Bildanordnung */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4x4 Raster */
+            gap: 10px;
         }
 
         .second-line {
@@ -60,7 +67,7 @@
             height: 100%;
             object-fit: contain; /* Bild proportional anpassen */
         }
-
+        /* Stil für den Content-Bereich */
         .content {
             max-width: 800px;
             margin: 20px auto;
@@ -68,6 +75,7 @@
             font-size: 1.5em; /* 150% Schriftgröße */
             line-height: 1.6;
         }
+     
 
         /* Medienabfragen für mobile Geräte */
         @media (max-width: 1200px) {
@@ -93,10 +101,6 @@
 
             h1 {
                 font-size: 1.5em; /* Schriftgröße weiter reduzieren */
-            }
-
-            .second-line {
-                font-size: 0.75em; /* Halb so groß wie die reduzierte erste Zeile */
             }
         }
     </style>
