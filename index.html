@@ -58,8 +58,12 @@
             border: 1px solid #ccc;
             padding-top: 100%; /* 1:1 Seitenverhältnis */
             overflow: hidden;
+            transition: transform 0.1s ease; /* Transition für das Reindrücken */
         }
 
+        .image-button:active {
+            transform: scale(0.95); /* Reindrücken-Effekt */
+        }
         .image-button img {
             position: absolute;
             top: 0;
